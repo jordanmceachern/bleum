@@ -46,7 +46,7 @@ nav {
 
 nav a {color: white}
 
-#home {
+#band {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +56,7 @@ nav a {color: white}
     font-size: 18px
 }
 
-#home img {width: 200px; height: unset}
+#band img {width: 200px; height: unset}
 
 .heading {
     text-decoration: none;
@@ -101,7 +101,7 @@ nav a {color: white}
 @media only screen and (max-width: 705px) {
     .hideThis {display: none !important}
 
-    #home {
+    #band {
         height: 50px;
         width: 100%;
         display: flex;

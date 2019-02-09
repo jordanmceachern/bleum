@@ -51,16 +51,16 @@ class ImageLoader extends React.Component {
   }
       
   render(){
-      return (
-          <div className="App">
-              <Layout />
-              <div id="landing">
-                  <img id="leftPicture" src={this.state.photos[0]} alt="gallery left" />
-                  <img id="mainPicture" className="leftBlurr rightBlurr" src={this.state.photos[1]} alt="gallery center" />
-                  <img id="rightPicture" src={this.state.photos[2]} alt="gallery right" />
-              </div>
+    return (
+      <React.Fragment>
+        <a id="home" />
+          <div id="landing">
+            <img id="leftPicture" src={this.state.photos[0]} alt="gallery left" />
+            <img id="mainPicture" className="leftBlurr rightBlurr" src={this.state.photos[1]} alt="gallery center" />
+            <img id="rightPicture" src={this.state.photos[2]} alt="gallery right" />
           </div>
-      )}
+      </React.Fragment>
+    )}
   }
   
   export default ImageLoader
