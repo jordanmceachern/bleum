@@ -1,6 +1,5 @@
 import React from 'react'
 import './imageLoader.css'
-import Layout from '../layout'
 import lt1 from './light_1.jpg'
 import lt2 from './light_2.jpg'
 import lt3 from './light_3.jpg'
@@ -53,12 +52,13 @@ class ImageLoader extends React.Component {
   render(){
     return (
       <React.Fragment>
-        <a id="home" />
+        <a id="home" href="#">
           <div id="landing">
             <img id="leftPicture" src={this.state.photos[0]} alt="gallery left" />
             <img id="mainPicture" className="leftBlurr rightBlurr" src={this.state.photos[1]} alt="gallery center" />
             <img id="rightPicture" src={this.state.photos[2]} alt="gallery right" />
           </div>
+        </a>
       </React.Fragment>
     )}
   }

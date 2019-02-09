@@ -30,11 +30,11 @@ render(){
                 <hr />
                 <hr />
             </div>
-            <a href="#home" id="band" to="/">{logoPlaceHolder}</Link>
-            <Link className="heading mobile hideThis" to="/aboutme">about us</Link>
-            <Link className="heading mobile hideThis" to="/photos">shows</Link>
-            <Link className="heading mobile hideThis" to="/videos">music</Link>
-            <Link className="heading mobile hideThis" to="/contact">contact</Link>
+            <a href="#home" id="band">{logoPlaceHolder}</a>
+            <a href="#about us" className="heading mobile hideThis">about us</a>
+            <a href="#shows" className="heading mobile hideThis">shows</a>
+            <a href="#music" className="heading mobile hideThis">music</a>
+            <a href="#contact" className="heading mobile hideThis">contact</a>
         </nav>
         )
     }
