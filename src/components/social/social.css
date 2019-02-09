@@ -1,7 +1,12 @@
 #social {
     display: flex;
     justify-content: space-evenly;
-    width: 55vw
+    width: 55vw;
+    margin: 0 auto !important
+}
+
+.links:hover, #buyDiv:hover {
+    background-color: rgba(256,256,256,0.1)
 }
 
 #social .links {
@@ -27,23 +32,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px !important;
-    width: 50px !important;
+    height: 100px !important;
+    width: 100px !important;
     background: rgba(0,0,0,0.5);
     border-radius: 5px
 }
-
 #buy {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    padding-bottom: 10px
 }
-
 #buy p {
-    height: 34px;
-    line-height: 1.2;
+    height: 20px;
     text-align: center;
     color: white
 }

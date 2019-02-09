@@ -73,27 +73,42 @@ nav a {color: white}
 .hideThis {display: unset}
 .spacer {height: 30px}
 
-#aboutus, #shows, #music {
+#aboutus, #shows, #music, #contact {
     height: min-content;
     width: 60vw;
     display: flex;
     flex-direction: column;
 }
-#aboutus div, #shows div, #music div {
+#aboutus div, #shows div, #music div, #contact div {
     text-align: center;
     font-size: 20px;
     margin: 10px
 }
-#aboutus p, #shows p, #music p {
+#aboutus p, #shows p, #music p, #contact p {
     line-height: 1.5;
     font-size: 20px;
     text-align: justify
 }
-#aboutus img, #shows img, #music img {
+#aboutus img, #shows img, #music img, #contact img {
     margin-bottom: 10px;
-    width: 100%;
-    height: auto
+    width: 80%;
+    height: auto;
+    margin: 0 auto
 }
+
+#contact p {
+    display: flex;
+    margin: 10px;
+    justify-content: center
+}
+#contact p a {
+    text-decoration: none;
+    height: 30px;
+    color: inherit;
+    font-size: 20px;
+}
+
+#contact p a:hover {box-shadow: 0 4px 4px -4px white}
 
 @media only screen and (max-width: 710px) {
     .hideThis {display: none !important}
@@ -112,7 +127,8 @@ nav a {color: white}
         height: unset;
         min-height: 50px;
         flex-direction: column;
-        border-bottom: 1px solid white
+        border-bottom: 1px solid white;
+        box-shadow: unset
     }
 
     .heading {
@@ -135,8 +151,8 @@ nav a {color: white}
         height: 30px;
         width: 30px;
         padding: 4px;
-        background: white;
-        border: 1px solid black;
+        background: black;
+        border: 1px solid white;
         border-radius: 3px
     }
 
@@ -144,7 +160,7 @@ nav a {color: white}
         width: 25px;
         height: 2px;
         border-radius: 2px;
-        background: black;
+        background: white;
         margin: 0
     }
 }
