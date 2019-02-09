@@ -1,0 +1,158 @@
+* { height: 100%; margin: 0; padding: 0; overflow-y: hidden}
+
+@font-face {
+    font-family: "gill_sans";
+    font-display: swap;
+    src: url("./Gill_Sans_Light.ttf")
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+body {
+    font-family: "noto-serif", serif;
+    color: white;
+    background-color: black;
+    height: 100vh;
+    width: 100vw
+}
+
+.App {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-items: center
+}
+
+nav {
+    position: fixed;
+    z-index: 2;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100vw;
+    box-shadow: 0 0 2px black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: black
+}
+
+nav a {color: white}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    width: 200px;
+    font-size: 18px
+}
+
+#home img {width: 200px; height: unset}
+
+.heading {
+    text-decoration: none;
+    width: 85px;
+    height: 50px;
+    font-size: 18px;
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.heading:hover, .heading:active {background: rgba(56,56,56,0.15)}
+
+#facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 190px
+}
+
+#facebook a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    font-size: 18px
+}
+
+#fb {
+    margin: 12px 5px;
+    height: 26px !important;
+    width: 26px !important
+}
+
+#hamburger {display: none}
+.hideThis {display: unset}
+
+@media only screen and (max-width: 705px) {
+    .hideThis {display: none !important}
+
+    #home {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid black
+    }
+
+    nav {
+        top: 0;
+        height: unset;
+        min-height: 50px;
+        flex-direction: column;
+        border-bottom: 1px solid black
+    }
+
+    .heading {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1px solid black
+    }
+
+    #hamburger {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        padding: 4px;
+        background: white;
+        border: 1px solid black;
+        border-radius: 3px
+    }
+
+    #hamburger hr {
+        width: 25px;
+        height: 2px;
+        border-radius: 2px;
+        background: black;
+        margin: 0
+    }
+
+    #facebook {
+        border-bottom: none !important;
+        width: 100%
+    }
+}

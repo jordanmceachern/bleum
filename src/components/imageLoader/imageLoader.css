@@ -1,0 +1,35 @@
+#landing {
+    margin-top: 50px;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#leftPicture, #rightPicture {
+    height: 80vh;
+    width: 106.6vh;
+    min-width: 106.6vh;
+    z-index: 0
+}
+
+.leftBlurr {box-shadow: -10px 0 100px 10px black}
+.rightBlurr {box-shadow: 10px 0 100px 10px black}
+#mainPicture {
+    height: 90vh;
+    width: 120vh;
+    min-width: 120vh;
+    z-index: 1
+}
+
+@media only screen and (max-width: 1024px) {
+    #landing {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-y: scroll
+    }
+    
+    #leftPicture, #rightPicture {display: none}
+}
