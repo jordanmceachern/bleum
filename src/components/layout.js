@@ -31,8 +31,8 @@ render(){
                 <hr />
             </div>
             <a href="#home" id="band">{logoPlaceHolder}</a>
-            <a href="#about us" className="heading mobile hideThis">about us</a>
-            <a href="#shows" className="heading mobile hideThis">shows</a>
+            <a href="#aboutus" className="heading mobile hideThis">about us</a>
+            {/* <a href="#shows" className="heading mobile hideThis">shows</a> */}
             <a href="#music" className="heading mobile hideThis">music</a>
             <a href="#contact" className="heading mobile hideThis">contact</a>
         </nav>
