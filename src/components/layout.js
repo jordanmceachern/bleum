@@ -30,11 +30,11 @@ render(){
                 <hr />
                 <hr />
             </div>
-            <a href="#home" id="band">{logoPlaceHolder}</a>
-            <a href="#aboutus" className="heading mobile hideThis">about us</a>
-            {/* <a href="#shows" className="heading mobile hideThis">shows</a> */}
-            <a href="#music" className="heading mobile hideThis">music</a>
-            <a href="#contact" className="heading mobile hideThis">contact</a>
+            <a href="#home" id="band" onClick={this.toggleHandler}>{logoPlaceHolder}</a>
+            <a href="#aboutus" className="heading mobile hideThis" onClick={this.toggleHandler}>about us</a>
+            {/* <a href="#shows" className="heading mobile hideThis" onClick={this.toggleHandler}>shows</a> */}
+            <a href="#music" className="heading mobile hideThis" onClick={this.toggleHandler}>music</a>
+            <a href="#contact" className="heading mobile hideThis" onClick={this.toggleHandler}>contact</a>
         </nav>
         )
     }

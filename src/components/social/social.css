@@ -10,8 +10,8 @@
 }
 
 #social .links {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
 }
 
 #social .links a, #social .links a img {
@@ -24,16 +24,16 @@
 }
 
 #fb {
-    height: 68px !important;
-    width: 68px !important
+    height: 60px !important;
+    width: 60px !important
 }
 
 #buyDiv {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px !important;
-    width: 100px !important;
+    height: 80px !important;
+    width: 80px !important;
     background: rgba(0,0,0,0.5);
     border-radius: 5px
 }
@@ -50,4 +50,30 @@
     height: 20px;
     text-align: center;
     color: white
+}
+
+@media only screen and (max-width: 710px) {
+    #social {width: 90vw}
+    #social .links {
+        height: 60px;
+        width: 60px;
+    }
+    #fb {
+        height: 45px !important;
+        width: 45px !important
+    }
+    #buyDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px !important;
+        width: 60px !important;
+        background: rgba(0,0,0,0.5);
+        border-radius: 5px
+    }
+    #buy p {
+        height: 20px;
+        text-align: center;
+        color: white
+    }
 }

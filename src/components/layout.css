@@ -90,10 +90,9 @@ nav a {color: white}
     text-align: justify
 }
 #aboutus img, #shows img, #music img, #contact img {
-    margin-bottom: 10px;
     width: 80%;
     height: auto;
-    margin: 0 auto
+    margin: 0 auto 10px auto
 }
 
 #contact p {
@@ -130,6 +129,10 @@ nav a {color: white}
         border-bottom: 1px solid white;
         box-shadow: unset
     }
+
+    #aboutus, #shows, #music, #contact {width: 90vw}
+    #aboutus p, #shows p, #music p, #contact p {text-align: unset}
+    #aboutus img, #shows img, #music img, #contact img {width: 100%}
 
     .heading {
         width: 100%;
